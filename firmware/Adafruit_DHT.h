@@ -37,7 +37,7 @@ class DHT {
 	public:
 		DHT();
 		DHT(uint8_t pin, uint8_t type, uint8_t count=6);
-		void init(uint8_t, uint8_t, uint8_t);
+		void init(uint8_t pin, uint8_t type, uint8_t count=6);
 		void begin(void);
 		float getHumidity();
 		float getTempCelcius();
