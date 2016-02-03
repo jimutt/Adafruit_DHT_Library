@@ -35,6 +35,7 @@ class DHT {
 		boolean read(void);
 
 	public:
+		DHT();
 		DHT(uint8_t pin, uint8_t type, uint8_t count=6);
 		void begin(void);
 		float getHumidity();
