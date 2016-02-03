@@ -17,6 +17,13 @@ DHT::DHT(uint8_t pin, uint8_t type, uint8_t count) {
 	firstreading = true;
 }
 
+void DHT::init(uint8_t pin, uint8_t type, uint8_t count) {
+	_pin = pin;
+	_type = type;
+	_count = count;
+	firstreading = true;
+}
+
 void DHT::begin(void) {
 // set up the pins!
 	pinMode(_pin, INPUT);
